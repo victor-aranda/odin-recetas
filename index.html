@@ -1,36 +1,62 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Proyecto - Recetas Odin</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="style.css">
+	<script src="https://kit.fontawesome.com/2096a954f5.js" crossorigin="anonymous"></script>
 </head>
 <body>
 	<nav class="flex-nav">
-		<ul>
-			<li>Recetas</li>
-			<li>Acerca De</li>
+		<div class="logo">
+			<span lang="en">Recipes</span><span lang="es">Recetas</span>
+		</div>
+		<ul class="menu">
+			<li><button id="switch-lang"><i class="fa-solid fa-language"></i><span lang="en">Change language</span><span lang="es">Cambiar lenguaje</span></button></li>
 		</ul>
 	</nav>
-	<div>
-		<h1>Recetas Odin</h1>
-		<ul>
+	<header>
+		<h1><span lang="en">Odin Deck Recipes</span></h1>
+		<h1><span lang="es">Recetas de Decks de Odin</span></h1>
+	</header>
+	<section class="content">
+		<ul class="content-menu">
 			<li>
-				<a href="recetas/#">Receta 1</a>
+				<a href="recetas/#">
+					<i class="fa-solid fa-cake-candles"></i>
+					<span lang="en">Madolche Deck</span>
+					<span lang="es">Deck Magidulce</span>
+				</a>
 			</li>
 			<li>
-				<a href="recetas/#">Receta 2</a>
+				<a href="recetas/#">
+					<i class="fa-solid fa-capsules"></i>
+					<span lang="en">Dinosaur Deck</span>
+					<span lang="es">Deck Dinosaurio</span>
+				</a>
 			</li>
 			<li>
-				<a href="recetas/#">Receta 3</a>
+				<a href="recetas/#">
+					<i class="fa-solid fa-crow"></i>
+					<span lang="en">Nordic Deck</span>
+					<span lang="es">Deck Nórdico</span>
+				</a>
+			</li>
+			<li>
+				<a href="recetas/#">
+					<i class="fa-solid fa-dungeon"></i>
+					<span lang="en">Labrynth Deck</span>
+					<span lang="es">Deck Labrislinto</span>
+				</a>
 			</li>
 		</ul>
-	</div>
+	</section>
 	<footer>
-		<div>
+		<div class="footer-content">
 			Copyright © 2023
 		</div>
 	</footer>
+	<script type="text/javascript" src="codigo.js"></script>
 </body>
 </html>
